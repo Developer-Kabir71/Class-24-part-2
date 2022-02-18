@@ -1,0 +1,281 @@
+/* Default CSS */
+img{
+    max-width: 100%;
+}
+
+/* Header css start */
+.custom-nav{
+    background-color: #E7E6E6;
+    z-index: 99;
+}
+.container a img{
+    width: 80px;
+}
+.navstyle ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+}
+.navstyle ul li a::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: #0D6EFD;
+    transition: .3s;
+}
+.navstyle ul li:hover a::after{
+    width: 80%;
+}
+.navstyle ul li:hover a{
+    color: #0D6EFD !important;
+}
+.btn-primarys{
+    border-radius: 50px;
+    color: #0D6EFD;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+}
+.btn-primarys:hover{
+    color: #fff !important;
+}
+.btn-primarys::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0D6EFD;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-primarys:hover::before{
+    width: 100%;
+}
+/* Header css end */
+
+/* Banner css start */
+.banner{
+    background-color: #EDF6FF;
+    height: 530px;
+}
+.banner p{
+    padding: 20px 0;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner .banner-image{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: -70px;
+    right: -170px;
+}
+.banner .banner-image img{
+    width: 100%;
+    height: 100%;
+}
+.btn-primary{
+    border-radius: 50px;
+    color: #fff;
+    background-color: #0D6EFD;
+    border: 1px solid #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .4s;
+}
+.btn-primary:hover{
+    color: #0D6EFD !important;
+    border: 1px solid #0D6EFD;
+    background-color: #fff;
+}
+/* Banner css end */
+
+/* Service section css start */
+.service .card1{
+    position: relative;
+    z-index: -1;
+}
+.service .card1::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: -35px;
+    width: 100%;
+    height: 100%;
+    background: url(./img/service-patern.png);
+}
+.service .service-txt{
+    width: 700px;
+}
+.service .service-txt span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D6EFD;
+}
+.service .service-txt h1{
+    padding: 15px 0;
+    position: relative;
+}
+.service .service-txt h1::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 8%;
+    height: 3px;
+    background-color: #A396ED;
+}
+.service .service-txt p{
+    font-size: 17px;
+    font-weight: 400;
+    color: #606060;
+    margin-bottom: 70px;
+}
+.service .card{
+    background-color: #F9FCFF;
+    transition: .4s;
+    z-index: 1;
+}
+.service .card:hover{
+    color: #fff;
+    background-color: #0D6EFD;
+    transform: scale(1.05);
+}
+.service .card .card-body{}
+.service .card .card-body h2{
+    font-size: 24px;
+    color: #3D4145;
+    padding-bottom: 10px;
+    transition: .4s;
+}
+.service .card:hover .card-body h2{
+    color: #fff;
+}
+.service .card:hover .card-body .icon{
+    color: #0D6EFD;
+    background-color: #fff;
+}
+.service .card .card-body .icon {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #5252F0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50% 50% 50% 0; 
+    position: relative;
+    transition: .4s;
+}
+.service .card .card-body .icon::after {
+    content: "";
+    position: absolute;
+    top: 115%;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: #A396ED;
+}
+.service .card .card-body p{
+    padding-top: 20px;
+    font-size: 17px;
+    color: #606060;
+    font-weight: 400;
+    transition: .4s;
+}
+.service .card:hover .card-body p{
+    color: #fff;
+}
+/* Service section css end */
+
+/* Animation part css start */
+.animation{}
+.animation .animation-banner{
+    background: url(./img/video-bg.jpg) no-repeat center top;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: -1;
+}
+.animation .animation-banner .text{
+    width: 400px;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 1;
+}
+.animation .animation-banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3c496686;
+}
+.animation .animation-banner .text h5{
+    font-size: 17px;
+    font-weight: 500;
+}
+.animation .animation-banner .text span{
+    background-color: #fff;
+    color: #0D6EFD;
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin-top: 50px;
+    position: relative;
+}
+.animation .animation-banner .text span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px double #fff;
+    animation: playbtn 3s ease-out infinite;
+}
+@keyframes playbtn{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2.3);
+        opacity: 0;
+    }
+}
+.animation .animation-banner .text h2{}
+.animation .animation-banner .text p{}
+/* Animation part css end */
