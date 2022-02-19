@@ -28,9 +28,14 @@ img{
     background-color: #0D6EFD;
     transition: .3s;
 }
+
 .navstyle ul li:hover a::after{
     width: 80%;
 }
+.navstyle ul li a.active-home::after{
+    width: 80%;
+}
+.navstyle ul li a.active-home,
 .navstyle ul li:hover a{
     color: #0D6EFD !important;
 }
@@ -112,19 +117,6 @@ img{
 /* Banner css end */
 
 /* Service section css start */
-.service .card1{
-    position: relative;
-    z-index: -1;
-}
-.service .card1::after {
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: -35px;
-    width: 100%;
-    height: 100%;
-    background: url(./img/service-patern.png);
-}
 .service .service-txt{
     width: 700px;
 }
@@ -152,17 +144,16 @@ img{
     color: #606060;
     margin-bottom: 70px;
 }
+/* service 2nd part */
 .service .card{
     background-color: #F9FCFF;
     transition: .4s;
-    z-index: 1;
 }
 .service .card:hover{
     color: #fff;
     background-color: #0D6EFD;
     transform: scale(1.05);
 }
-.service .card .card-body{}
 .service .card .card-body h2{
     font-size: 24px;
     color: #3D4145;
@@ -209,10 +200,23 @@ img{
 .service .card:hover .card-body p{
     color: #fff;
 }
+/* service patern img */
+.service .service-img{
+    position: relative;
+}
+.service .service-img::before {
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: -40px;
+    width: 100%;
+    height: 100%;
+    background: url(./img/service-patern.png);
+    background-repeat: no-repeat;
+}
 /* Service section css end */
 
 /* Animation part css start */
-.animation{}
 .animation .animation-banner{
     background: url(./img/video-bg.jpg) no-repeat center top;
     background-size: cover;
@@ -276,6 +280,4 @@ img{
         opacity: 0;
     }
 }
-.animation .animation-banner .text h2{}
-.animation .animation-banner .text p{}
 /* Animation part css end */
