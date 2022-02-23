@@ -281,3 +281,335 @@ img{
     }
 }
 /* Animation part css end */
+
+/* Prizing section CSS start */
+.price-section{
+    background-color: #F6F9FC;
+}
+.price-section .price-head h6{
+    color: #0D6EFD;
+    font-size: 16px;
+}
+.price-section .price-head h2{
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.price-section .price-head h2::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 525px;
+    width: 60px;
+    height: 2px;
+    background-color: #0D6EFD;
+}
+.price-section .price-head p{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #606060;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.pricing-box .card .card-body{
+    transition: .3s;
+}
+.pricing-box .card:hover .card-body{
+    background-color: #0D6EFD;
+    color: #fff;
+}
+.pricing-box .card-body h6{
+    font-size: 23px;
+    font-weight: 400;
+}
+.pricing-box .card-body h1{
+    font-size: 45px;
+    font-weight: 500;
+    padding: 18px 0;
+}
+.pricing-box .card-body ul{
+    margin-bottom: 40px;
+}
+.pricing-box .card-body ul li{
+    font-size: 16px;
+    font-weight: 500;
+    color: #606060;
+    margin: 5px 0;
+}
+.pricing-box .card:hover .card-body ul li{
+    color: #fafafa;
+}
+.pricing-box .card-body a.btn-style{
+    transition: .3s;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0D6EFD;
+    overflow: hidden;
+    display: inline-block;
+    padding: 7px 20px;
+    position: relative;
+    z-index: 1;
+}
+.pricing-box .card:hover .card-body a.btn-style{
+    color: #6ea6fbed;
+    background-color: #fff;
+}
+.pricing-box .card-body a.btn-style::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0D6EFD;
+    border-radius: 50px; 
+    transition: .3s;
+    z-index: -1;
+}
+.pricing-box .card-body a.btn-style:hover::before{
+    width: 100%;
+}
+
+/* Prizing section CSS end */
+
+/* Purchase section css start */
+.purchase{
+    background: url(./img/free-bg.jpg) no-repeat;
+    background-position: center 60%;
+    background-size: cover;
+    padding: 100px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.purchase::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3259d0c9;
+    z-index: -1;
+}
+.purchase-content{
+    margin: 0 auto;
+}
+.purchase .purchase-content h1{
+    font-size: 45px;
+    font-size: 300;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.purchase .purchase-content h1::before {
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.subscribe{
+    background-color: #F8F9FA;
+}
+.subscribe .div-left{
+    background-color: #3763EB;
+    border-radius: 5px;
+    padding: 50px;
+}
+.subscribe .div-left-content{
+    color: #fff;
+}
+.subscribe .div-left-content p{
+    padding: 6px 0;
+}
+.subscribe .div-left-content input{
+    display: inline-block;
+    margin-right: 20px;
+}
+.subscribe .div-left-content a{
+    background-color: #3763EB;
+}
+.subscribe .div-left-content a:hover{
+        color: #fff !important;
+        border: 1px solid #fff;
+        background-color: #3763EB;
+}
+.subscribe .div-right{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.subscribe .div-right-content h3{
+    margin-bottom: 110px;
+}
+.subscribe .div-right-content a{
+    background-color: #3763EB;
+}
+.subscribe .div-right-content a:hover{
+    color: #fff !important;
+    border: 1px solid #fff;
+    background-color: #3763EB;
+}
+/* Purchase section css end */
+
+/* Brand section css start */
+.brand .left-content h6{
+    color: #0D6EFD;
+}
+.brand .left-content h2{
+    padding: 8px 0;
+}
+.brand .left-content p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.brand .right-content{
+    background-color: #FBFBFB;
+}
+.brand .right-content .image{
+    background-color: #fff;
+    width: 230px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    transition: .4s;
+}
+.brand .right-content .image:nth-child(6){
+    position: relative;
+    top: 10px;
+}
+.brand .right-content .image:nth-child(5){
+    position: relative;
+    top: -3px;
+}
+.brand .right-content .image:hover{
+    background-color: #F6F9FC;
+}
+/* Brand section css end */
+
+/* Blog section css start */
+.card{
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+}
+.card .content h3{
+    font-size: 25px;
+}
+.card .tablet{
+    color: #fff;
+    background-color: #0D6EFD;
+    border-radius: 50px;
+    padding: 2px;
+    display: inline-block;
+    position: absolute;
+    top: 180px;
+    right: 15px;
+}
+.card .tablet img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 20px;
+    float: left;
+}
+.card .tablet h5{
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 15px;
+}
+.card .tablet p{
+    color: #606060;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Blog section css end */
+
+/* Footer section css start */
+.footer{
+    background-color: #081828;
+    color: #fff;
+}
+.footer-widget h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-widget h3::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -18px;
+    width: 20px;
+    height: 2px;
+    background-color: #0D6EFD;
+    transform: rotate(90deg);
+}
+.footer-widget ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer-widget ul li {
+    margin: 10px 0;
+}
+.footer-widget ul li a {
+    text-decoration: none;
+    transition: .4s;
+}
+.footer-widget ul li a:hover{
+    letter-spacing: 1.5;
+    color: red;
+}
+.footer a{
+    color: #fff;
+}
+
+/*  Footer Social  */
+.widget-social ul{
+    display: flex;
+}
+.widget-social ul li{
+    padding: 10px 0;
+    margin: 0 !important;
+}
+.widget-social ul li span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.widget-social ul li a {
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+
+.footer-copyright p{
+    margin-bottom: 0;
+}
+.footer-contact-item {
+    margin-bottom: 20px;
+}
+.footer-contact-item span {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.footer-contact-item a {
+    text-decoration: none;
+}
+/* Footer section css end */
